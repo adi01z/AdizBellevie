@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADIZ BelleVie</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">
+                    <img src="/logo.png" alt="ADIZ BelleVie Logo">
+                </a>
+
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+                <ul class="nav-links">
+                    <li><a href="/index.html#home">Home</a></li>
+                    <li><a href="/index.html#about">About</a></li>
+                    <li><a href="/index.html#properties">Properties</a></li>
+                    <li><a href="/index.html#contact">Contact</a></li>
+                    <li><a href="https://www.linkedin.com/in/aditi-pal-182064351/" class="social-icon"><i
+                                class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+
+    <section class="hero" id="home">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <ul class="search-tabs">
+                    <li class="active">BUY</li>
+                    <li>RENT</li>
+                    <li>COMMERCIAL</li>
+                    <li>PG/CO-LIVING</li>
+                    <li>PLOTS</li>
+                </ul>
+
+                <div class="search-box">
+                    <input list="cities" name="city" placeholder="Select City" />
+                    <datalist id="cities">
+                        <option value="Mumbai">
+                        <option value="Delhi">
+                        <option value="Bangalore">
+                        <option value="Hyderabad">
+                        <option value="Chennai">
+                        <option value="Pune">
+                        <option value="Kolkata">
+                        <option value="Jaipur">
+                        <option value="Ahmedabad">
+                        <option value="Lucknow">
+                    </datalist>
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Property Cards Section -->
+
+    <section class="property-section" id="properties">
+        <h2 class="section-title">Featured Properties</h2>
+        <div class="property-grid">
+
+            <div class="property-card" data-aos="fade-up">
+                <img src="/2.jpg" alt="Property 1">
+                <div class="card-content">
+                    <h3>Luxury Villa in Goa</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Calangute, Goa</p>
+                    <p class="price">₹ 3.5 Cr</p>
+                    <ul class="features">
+                        <li>4 BHK</li>
+                        <li>3500 sq.ft</li>
+                        <li>Fully Furnished</li>
+                    </ul>
+                </div>
+                <span class="wishlist">♥</span>
+            </div>
+
+            <div class="property-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="/3.jpg" alt="Property 2">
+                <div class="card-content">
+                    <h3>Modern Apartment</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Andheri West, Mumbai</p>
+                    <p class="price">₹ 1.8 Cr</p>
+                    <ul class="features">
+                        <li>3 BHK</li>
+                        <li>1800 sq.ft</li>
+                        <li>Sea View</li>
+                    </ul>
+                </div>
+                <span class="wishlist">♥</span>
+            </div>
+
+            <div class="property-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="/4.jpg" alt="Property 3">
+                <div class="card-content">
+                    <h3>Cozy Home</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> BTM Layout, Bangalore</p>
+                    <p class="price">₹ 85 Lakh</p>
+                    <ul class="features">
+                        <li>2 BHK</li>
+                        <li>1250 sq.ft</li>
+                        <li>Semi Furnished</li>
+                    </ul>
+                </div>
+                <span class="wishlist">♥</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Parallax Section -->
+    <section class="parallax-section">
+        <div class="overlay-text">
+            <h2>Discover a Life of Elegance</h2>
+            <p>Find your dream home with us</p>
+            <a href="#properties" class="cta-btn">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- Glassmorphism CTA Section -->
+    <section class="glass-cta" id="contact">
+        <h2>Ready to Buy Your Dream Home?</h2>
+        <a href="#contact" class="cta-btn">Contact Us</a>
+    </section>
+
+
+    <!-- Video Tour Section -->
+    <section class="video-tour" id="about">
+        <div class="video-overlay">
+            <h2>Take a Virtual Tour of Our Properties</h2>
+            <p>Get an inside look at our stunning properties, view every detail from the comfort of your home!</p>
+            <a href="https://youtu.be/cjlza_Uj2iU?si=Cqo6F2tk_3lH-nqc" class="play-btn" target="_blank">
+                <i class="fas fa-play"></i> Watch Tour
+            </a>
+            <!-- <video autoplay muted loop>
+                <source src="video/tour-video.mp4" type="video/mp4">
+            </video> -->
+        </div>
+    </section>
+
+
+    <!-- Lifestyle Amenities Section -->
+    <section class="amenities-section">
+        <h2 class="section-title">Lifestyle Amenities</h2>
+        <div class="amenities-carousel">
+            <div class="amenity-card">
+                <i class="fas fa-dumbbell"></i>
+                <h3>Fitness Center</h3>
+                <p>State-of-the-art gym with personal training support.</p>
+            </div>
+            <div class="amenity-card">
+                <i class="fas fa-swimmer"></i>
+                <h3>Swimming Pool</h3>
+                <p>Infinity pool for adults and kids with a poolside café.</p>
+            </div>
+            <div class="amenity-card">
+                <i class="fas fa-spa"></i>
+                <h3>Yoga Deck</h3>
+                <p>Peaceful space for yoga and meditation with sunrise views.</p>
+            </div>
+            <div class="amenity-card">
+                <i class="fas fa-seedling"></i>
+                <h3>Rooftop Garden</h3>
+                <p>Enjoy serene evenings in our lush rooftop terrace garden.</p>
+            </div>
+            <div class="amenity-card">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3>Co-working Space</h3>
+                <p>Modern workspaces with high-speed internet and privacy zones.</p>
+            </div>
+            <div class="amenity-card">
+                <i class="fas fa-glass-cheers"></i>
+                <h3>Clubhouse Lounge</h3>
+                <p>Elegant social spaces with indoor games, library, and mini bar.</p>
+            </div>
+
+            <div class="amenity-card">
+                <i class="fas fa-film"></i>
+                <h3>Private Cinema</h3>
+                <p>Mini-theater experience for exclusive movie nights with family.</p>
+            </div>
+
+            <div class="amenity-card">
+                <i class="fas fa-child"></i>
+                <h3>Kids' Play Zone</h3>
+                <p>Safe, fun and colorful environment for kids to enjoy freely.</p>
+            </div>
+
+            <div class="amenity-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>24x7 Security</h3>
+                <p>Gated security with CCTV, guards, and biometric entry system.</p>
+            </div>
+
+            <div class="amenity-card">
+                <i class="fas fa-car"></i>
+                <h3>Valet Parking</h3>
+                <p>Premium parking assistance and multi-level covered parking.</p>
+            </div>
+        </div>
+        <!-- Background Music
+        <audio autoplay loop id="bg-music" volume="0.9">
+            <source
+                src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_347f7b9b85.mp3?filename=calm-background-110238.mp3"
+                type="audio/mp3">
+        </audio> -->
+    </section>
+
+
+    <!-- Floating Contact Panel -->
+    <div class="floating-contact">
+        <a href="tel:+919999999999" class="contact-icon call" target="_blank">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+        <a href="https://wa.me/919999999999" class="contact-icon whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+
+    <!-- Interactive Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">📍 Explore Our Location</h2>
+            <p class="map-subtitle">Experience serenity & connectivity at ADIZ BelleVie – where comfort meets
+                convenience.</p>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1083640930214!2d-122.41941548468117!3d37.77492977975906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064c6d7d1b1%3A0xe4c46d2f0d11eec2!2sSan%20Francisco!5e0!3m2!1sen!2sus!4v1684609093657!5m2!1sen!2sus"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Enhanced Testimonial Section -->
+    <section class="testimonial-section" id="testimonials">
+        <div class="testimonial-heading" data-aos="fade-up">
+            <h2>What Our Residents Say</h2>
+            <p>Real voices, real stories from ADIZ BelleVie.</p>
+        </div>
+
+        <div class="testimonial-cards">
+
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://i.pravatar.cc/100?img=32" alt="Riya Mehta">
+                <blockquote>
+                    <p>"Living at ADIZ BelleVie has redefined our idea of comfort. The surroundings, design, and service
+                        feel like a luxury resort — but it's our home."</p>
+                    <footer>— Riya Mehta</footer>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </blockquote>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://i.pravatar.cc/100?img=47" alt="Aman Raj">
+                <blockquote>
+                    <p>"I never imagined a home could feel like a vacation every day. The rooftop garden and co-working
+                        space are a blessing!"</p>
+                    <footer>— Neha Sinha</footer>
+                    <div class="stars">⭐⭐⭐⭐</div>
+                </blockquote>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="https://i.pravatar.cc/100?img=15" alt="Neha Sinha">
+                <blockquote>
+                    <p>"The yoga deck and pool are my favorite spots. Everything here is crafted with elegance and care.
+                        It's pure peace."</p>
+                    <footer>— Aman Raj</footer>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- chatbot -->
+
+    <div class="chatbot-assistant" data-aos="fade-left">
+        <div class="chat-avatar">
+            <img src="/chatbot.png" alt="Chat Assistant" />
+        </div>
+        <div class="chat-text">
+            <h4>Hi, I'm AdizBot 👋</h4>
+            <p>Need help finding your perfect home? Ask me anything!</p>
+            <button class="chat-button" onclick="window.open('https://wa.me/91XXXXXXXXXX', '_blank')">Start
+                Chat</button>
+        </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- <div class="footer-logo">
+                <img src="/logo.png" alt="ADIZ BelleVie Logo">
+            </div> -->
+
+            <!-- Footer Links Section -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Properties</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info Section -->
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <p>Email: info@adizbellevie.com</p>
+                <p>Phone: +91 9996677810</p>
+            </div>
+
+            <!-- Newsletter Section -->
+            <div class="footer-newsletter">
+                <h4>Subscribe to Our Newsletter</h4>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+            <hr class="footer-divider">
+            <p>&copy; 2025 Made with ❤️ by <strong>Aditi</strong>. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/_aditi._01/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/aditi-pal-182064351/" class="social-icon"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+
+</html>
